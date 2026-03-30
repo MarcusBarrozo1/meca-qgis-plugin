@@ -21,7 +21,7 @@ Na arquitetura atual (legado):
 ---
 
 ## 🔬 Fundamentação Científica e Metodológica
-A base do MECA é o algoritmo **SAFER** (*Surface Albedo Flux Evapotranspiration over Rainfall*), originalmente estruturado em linguagem `R`. O processo de cálculo deste repositório envolve o balanço de energia à superfície, estruturado nas seguintes etapas principais:
+A base do MECA é o algoritmo **SAFER** (*Simple Algorithm for Evapotranspiration Retrieving*), originalmente estruturado em linguagem `R`. O processo de cálculo deste repositório envolve o balanço de energia à superfície, estruturado nas seguintes etapas principais:
 
 1. **Correção e Calibração Radiométrica:** Obtenção do Albedo no topo da atmosfera e da superfície a partir de bandas ópticas.
 2. **Balanço de Ondas Curtas e Longas:** Cálculo da Radiação Solar Global, Radiação Líquida (Rn) e Emissividade Atmosférica/Superficial.
