@@ -51,5 +51,13 @@ To transform this MVP into a scalable **Geographic Data Science** pipeline, the 
 ### 5. Scientific Validation and CI/CD
 - Build unit tests (`pytest`) to inject control matrices into the Python code and compare the results (pixel by pixel) with the outputs of the original `R` methodology, ensuring scientific rigor and reproducibility.
 
-### 6. Future Features (Optional)
+### 6. Fiscal Intelligence and Territorial Governance (CAR vs. Actual Cultivation)
+- **The Challenge:** The Rural Environmental Registry (CAR - *Cadastro Ambiental Rural*) is a declaratory legal boundary. Running the SAFER model over the total extent of the CAR overestimates consumption, as it accounts for legal reserve areas and bare soil.
+- **The Mapped Solution:** Implement an automated **Relational Spatial Join** engine:
+  1. **The Physical Mask:** Use computer vision and *Machine Learning* models for Crop Boundary Classification, isolating exclusively the active planted area.
+  2. **Spatial Join:** Intersect the physical cultivation mask with the CAR's legal land grid to assign ownership.
+  3. **Relational Validation:** Link the titleholder of the validated polygon with the Raw Water Users Database.
+- **Business Impact:** This architecture elevates MECA from an evapotranspiration estimator to an **automated water auditing tool**, capable of instantly identifying regular use, clandestine extraction (unregistered), and overutilization (planted area exceeding the granted limit).
+
+### 7. Future Features (Optional)
 - Develop an auxiliary module for spectral classification of crop type, aiming to refine specific consumption coefficients if requested by water management authorities.

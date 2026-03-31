@@ -52,5 +52,13 @@ Para transformar este MVP em um pipeline de **Geographic Data Science** escaláv
 ### 5. Validação Científica e CI/CD
 - Construção de testes unitários (`pytest`) para injetar matrizes de controle no código Python e comparar os resultados (pixel a pixel) com os *outputs* da metodologia original estabelecida em `R`, garantindo rigor e reprodutibilidade científica.
 
-### 6. Features Futuras (Opcionais)
+### 6. Inteligência Fiscal e Governança Territorial (CAR vs. Cultivo Real)
+- **O Desafio:** O Cadastro Ambiental Rural (CAR) é um limite jurídico declaratório. Executar o modelo SAFER sobre a extensão total do CAR superestima o consumo, pois contabiliza áreas de reserva legal e solo exposto.
+- **A Solução Mapeada:** Implementar um motor automatizado de **Cruzamento Espacial Relacional**:
+  1. **A Máscara Física:** Utilizar modelos de visão computacional e *Machine Learning* para classificação de fronteiras agrícolas (*Crop Boundary Classification*), isolando exclusivamente a área plantada ativa.
+  2. **Interseção Espacial (*Spatial Join*):** Cruzar a máscara física de cultivo com a malha fundiária jurídica do CAR para atribuição de posse.
+  3. **Validação Relacional:** Relacionar o titular do polígono validado com o Banco de Dados de Usuários de Água Bruta.
+- **Impacto de Negócio:** Essa arquitetura eleva o MECA de um estimador de evapotranspiração para uma ferramenta de **auditoria hídrica automatizada**, capaz de identificar instantaneamente o uso regular, a captação clandestina (sem registro) e a sobreutilização (área plantada superior à outorga).
+
+### 7. Features Futuras (Opcionais)
 - Desenvolvimento de módulo auxiliar para categorização espectral do tipo de cultura agrícola, visando refinar coeficientes de consumo específicos caso demandado pela gestão hídrica.
