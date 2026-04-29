@@ -3,6 +3,9 @@
 
 Uma implementação Python/QGIS baseada no algoritmo SAFER para estimativa de evapotranspiração e quantificação do consumo hídrico no semiárido.
 
+## ⚠️ Aviso de Arquitetura:
+Este repositório contém a Prova de Conceito (PoC) original. O código atual atinge o objetivo biofísico, mas possui alto acoplamento (interface/motor) e dívida técnica. Não é recomendado para uso em produção no estado atual. O foco deste repositório é demonstrar a modelagem matemática (SAFER) aplicada ao QGIS. Veja a seção "Roadmap de Refatoração" abaixo para a arquitetura alvo.
+
 ## 📌 Visão Executiva: O Problema de Negócio
 A gestão eficiente de recursos hídricos em regiões semiáridas, especialmente durante a quadra chuvosa e períodos de seca, exige monitoramento rigoroso. O objetivo central deste projeto não é a classificação agronômica de culturas, mas sim a **quantificação volumétrica da demanda hídrica (em m³/dia e mm/mês)** com base na extensão real (em hectares) da área plantada pertencente a **usuários de água bruta**. 
 
